@@ -1,0 +1,108 @@
+Serierna 1,2,3 är alla scannade i högra facket närmast gångjärnet.
+
+Serie 4 samma fack men i andra änden.
+
+Serie 5 andra facket närmast gångjärnet.
+
+Serie 6 andra facket andra änden.
+
+
+Serie 7 utan dia gråskala
+	inställningar se settings-glas.png
+Serie 8 utan dia vriden 90 grader.
+
+
+Serie 8 utan dia vriden 90 grader. mitt på glaset.
+
+
+Uppmätt längd med skjutmått ger 124.4 mm möjligen 124.45 mm
+
+
+
+Manuell mätning av diametern med hjälp av micrometer
+====================================================
+
+origo (x-led) sätts till den ände som är knipsad (ojämt snitt).
+
+Micrometern kallibrerad mot bladmått för mått runt 1 mm.
+
+Mätning i planet som blir när den läggs på ett bord
+vilket motsvarar det planet som mäts i scannern.
+
+Mätningen skapar en tillplattning på kanske 0.15 mm längd.
+Det innebär en minskning av mätt diameter som kan beräknas enligt
+
+	k = korda = 0.15 mm
+	r = radie = 0.5 mm ; d= 2 * r (diameter)
+	rm = minsta avståndet mot korda.
+	rm^2 + k^2/4 =r^2
+	rm =  r * sqrt(  1 - ( k/2r)^2 ) = r * sqrt ( 1 - ( k/d)^2 )
+	vid små k/d kan detta förenklas till
+	dm = d *( 1 - (k/d)^2 / 2 )
+Så om kordan är .15  blir felet 0.011 mm.
+Vi kan nog betrakta det som mätfel. 
+
+	
+
+	x [mm]		Ytterdiam [mm]
+	------------------------------
+	2		0.915
+	10		0.915
+	20		0.917
+	30		0.913
+	40		0.916
+	50		0.913
+	55		0.903
+	60		0.910
+	70		0.910
+	80		0.910
+	90		0.900
+	100		0.898
+	110		0.895
+När jag drar skruven går den hårdare på vissa lägen, något jag tror påverkat
+resultatet.  jag ska försöka smörja den.
+Resultatet blev att friktionen övervinns betydligt tidigare.
+Mäter vid de existerande plattorna ger att det finns en mätbar skillnad.
+Gör därför mätningarna där plattorna inte finns.
+
+	x [mm]		Ytterdiam [mm]
+	------------------------------
+	6		0.932
+	15		0.932
+	25		0.930
+	35		0.930
+	46		0.937
+	53		0.927
+	57		0.930
+	64		0.933
+	74		0.934
+	84		0.936
+	93		0.939
+	103		0.930
+	110		0.915
+	
+	Analys: medel 0.9311
+
+
+Vriden 90 grader
+	x [mm]		Ytterdiam [mm]
+	------------------------------
+	6		0.924
+	12		0.937
+	24		0.941
+	35		0.938
+	45		0.941
+	52		0.932
+	57		0.937
+	64		0.933
+	74		0.938
+	83		0.938
+	90		0.943
+	103		0.931
+	108		0.933
+
+	Analys: medel 0.9358
+
+
+Scanning med 1200 dpi ger en pixelstorlek på 0.02 mm så fel inom den
+marginalen borde vara ok, dvs från 0.91 till 0.95.
